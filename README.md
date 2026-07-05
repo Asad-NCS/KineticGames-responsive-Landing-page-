@@ -13,6 +13,12 @@ This project is a responsive landing page for Kinetic Games. It was built as a s
 
 I created the landing page structure and styled it so it feels polished and easy to use. The page is meant to give a strong first impression and show the Kinetic Games brand clearly.
 
+## Live Demo
+
+You can view the deployed version here:
+
+https://kinetic-games.vercel.app
+
 ## How to run it
 
 Install dependencies:
