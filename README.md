@@ -7,7 +7,7 @@ This project is a responsive landing page for Kinetic Games. It was built as a s
 - A full landing page layout
 - Responsive design for different screen sizes
 - A hero section, navigation, and visual content
-- Assets stored in the `public` folder
+- The entry page and stylesheet live in the `public` folder
 
 ## What I did
 
