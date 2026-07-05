@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetic Games</title>
+<meta name="description" content="We create the games we want to play—worlds built with care, tension, and personality.">
+<meta property="og:title" content="Kinetic Games">
+<meta property="og:description" content="We create the games we want to play—worlds built with care, tension, and personality.">
+<meta property="og:url" content="https://kineticgames.co.uk">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" aria-label="Kinetic Games">
+    <img src="https://kineticgames.co.uk/payload-api/media/file/kinetic_games_header_logo.webp" alt="Kinetic Games">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://kineticgames.co.uk/phasmophobia" target="_blank" rel="noopener">Phasmophobia</a></li>
+    <li><a href="https://kineticgames.co.uk/news" target="_blank" rel="noopener">News</a></li>
+    <li><a href="https://kineticgames.co.uk/publishing" target="_blank" rel="noopener">Publishing</a></li>
+    <li><a href="https://kineticgames.co.uk/about-us" target="_blank" rel="noopener">About Us</a></li>
+    <li><a href="https://www.kineticgames.co.uk/merch" target="_blank" rel="noopener">Merch</a></li>
+  </ul>
+  <div class="nav-burger" id="burgerBtn" role="button" aria-label="Open menu" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <div class="mob-close" id="mobClose" role="button" aria-label="Close menu" tabindex="0">&times;</div>
+  <a href="https://kineticgames.co.uk/phasmophobia" target="_blank" rel="noopener">Phasmophobia</a>
+  <a href="https://kineticgames.co.uk/news" target="_blank" rel="noopener">News</a>
+  <a href="https://kineticgames.co.uk/publishing" target="_blank" rel="noopener">Publishing</a>
+  <a href="https://kineticgames.co.uk/about-us" target="_blank" rel="noopener">About Us</a>
+  <a href="https://www.kineticgames.co.uk/merch" target="_blank" rel="noopener">Merch</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-video">
+    <video id="heroVideo" autoplay muted loop playsinline aria-hidden="true">
+      <source src="https://kineticgames.co.uk/payload-api/media/file/Kinetic_Header_Video-1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-title">
+    <h1>Kinetic<br>Games</h1>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section style="position:relative;z-index:1;background:#0d0d0d">
+  <div class="about">
+    <div class="about-text reveal">
+      <h2>Small Studio.<br>Big Impact.</h2>
+      <p class="tagline">Independent. UK-Born. Fearlessly Creative.</p>
+      <p>Founded in 2020, Kinetic Games is a truly independent UK studio dedicated to crafting distinctive, genre-defining experiences. With a small but mighty team, we focus on pushing boundaries and staying closely connected to the community that inspires us.</p>
+    </div>
+    <div class="about-img reveal reveal-d2">
+      <img src="https://kineticgames.co.uk/payload-api/media/file/kinetic-team-photo.webp" alt="Kinetic Games team photo">
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section">
+  <p class="quote-text reveal">
+    We create the games we want to play—worlds built with care, tension, and personality. If it thrills us, challenges us, or unnerves us, we build it and share it with everyone.
+  </p>
+</div>
+
+<!-- PHASMOPHOBIA CARD -->
+<div class="phasm-wrap">
+  <a href="https://kineticgames.co.uk/phasmophobia" target="_blank" rel="noopener" class="phasm-card reveal" id="phasmCard">
+    <div class="phasm-bg" id="phasmBg"></div>
+    <div class="phasm-overlay"></div>
+    <div class="phasm-fog" id="phasmFog"></div>
+    <div class="ghost-tip">
+      <div class="g-name">Ghost Detected</div>
+      <p>Collect evidence. Identify the ghost. Survive the night.</p>
+    </div>
+    <div class="phasm-content">
+      <img src="https://kineticgames.co.uk/payload-api/media/file/Phasmophobia_Logo.webp" alt="Phasmophobia" class="phasm-logo">
+      <span class="phasm-btn">Explore the Game <span class="phasm-arrow">&rarr;</span></span>
+    </div>
+  </a>
+</div>
+
+<!-- PUBLISHING -->
+<div class="publishing">
+  <div class="pub-inner reveal">
+    <div class="pub-img">
+      <img src="https://kineticgames.co.uk/payload-api/media/file/Kinetic_Publishing_Image_Homepage.webp" alt="Kinetic Publishing">
+    </div>
+    <div class="pub-text">
+      <h2>We're Hunting for the Next Standout Game</h2>
+      <p class="pub-sub">If you're making something that deserves to be discovered, we're all ears.</p>
+      <p>Any genre, PC and/or console — if your game is full of personality and creativity, we'll check it out.</p>
+      <a href="https://kineticgames.co.uk/publishing" target="_blank" rel="noopener" class="btn-pub">Learn About Publishing <span>&rarr;</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS -->
+<section class="news">
+  <div class="news-hd reveal">
+    <h2>Latest News</h2>
+    <a href="https://kineticgames.co.uk/news" target="_blank" rel="noopener" class="more-news">More News &rarr;</a>
+  </div>
+  <p class="news-sub reveal">For all the latest news, announcements, jobs, look no further.</p>
+  <div class="news-grid">
+    <a href="https://kineticgames.co.uk/news/phasmophobia-quality-of-life-update-preview" target="_blank" rel="noopener" class="news-card reveal">
+      <div class="news-thumb">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/NEWS%20-%20Cover%2016x9%201920x1080.webp" alt="Phasmophobia Quality of Life Update Preview">
+      </div>
+      <div class="news-tag-row">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/Phasmophobia_Logo.webp" alt="" class="news-game-icon">
+        <span class="news-tag-txt">Phasmophobia News</span>
+      </div>
+      <div class="news-body">
+        <div class="news-date">7/2/2026</div>
+        <h3 class="news-title">Phasmophobia Quality of Life Update Preview</h3>
+        <span class="read-more">Read More <span class="read-arrow">&#9654;</span></span>
+      </div>
+    </a>
+    <a href="https://kineticgames.co.uk/news/phasmophobia-2026-and-beyond" target="_blank" rel="noopener" class="news-card reveal reveal-d1">
+      <div class="news-thumb">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/New2026Roadmap.webp" alt="Phasmophobia 2026 and Beyond" onerror="this.src='https://kineticgames.co.uk/payload-api/media/file/phasmophobia_game_image.webp'">
+      </div>
+      <div class="news-tag-row">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/Phasmophobia_Logo.webp" alt="" class="news-game-icon">
+        <span class="news-tag-txt">Phasmophobia</span>
+      </div>
+      <div class="news-body">
+        <div class="news-date">6/24/2026</div>
+        <h3 class="news-title">Phasmophobia 2026 and Beyond</h3>
+        <span class="read-more">Read More <span class="read-arrow">&#9654;</span></span>
+      </div>
+    </a>
+    <a href="https://kineticgames.co.uk/news/phasmophobia-hotfix-v01715" target="_blank" rel="noopener" class="news-card reveal reveal-d2">
+      <div class="news-thumb">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/PhasmophobiaHotfixKA.webp" alt="Phasmophobia Hotfix" onerror="this.src='https://kineticgames.co.uk/payload-api/media/file/phasmophobia_game_image.webp'">
+      </div>
+      <div class="news-tag-row">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/Phasmophobia_Logo.webp" alt="" class="news-game-icon">
+        <span class="news-tag-txt">Phasmophobia</span>
+      </div>
+      <div class="news-body">
+        <div class="news-date">6/3/2026</div>
+        <h3 class="news-title">Phasmophobia — Hotfix v0.17.1.5</h3>
+        <span class="read-more">Read More <span class="read-arrow">&#9654;</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- JOIN THE TEAM -->
+<section class="careers">
+  <h2 class="reveal">Join the Team</h2>
+  <p class="reveal reveal-d1">If you're passionate about creating unique, genre-defining experiences and working in a wonderfully collaborative team, we want to hear from you.</p>
+  <a href="https://ats.rippling.com/en-GB/kinetic-games-careers/jobs" target="_blank" rel="noopener" class="btn-careers reveal reveal-d2">All Open Positions &rarr;</a>
+</section>
+
+<!-- GOLD WAVE + CONTACT -->
+<div class="gold-wave">
+  <div class="gold-wave-inner">
+    <div class="get-touch reveal">
+      <div class="gt-left">
+        <span class="gt-eyebrow">We&apos;d love to hear from you</span>
+        <h2>Get in touch<br><u>with Kinetic Games</u></h2>
+        <a href="https://kineticgames.zendesk.com/hc/en-gb/requests/new" target="_blank" rel="noopener" class="btn-support">Support &rarr;</a>
+      </div>
+      <div class="gt-tiles">
+        <a class="gt-tile" href="https://kineticgames.zendesk.com/hc/en-gb" target="_blank" rel="noopener">
+          <span class="gt-tile-num">01</span>
+          <span class="gt-tile-body">
+            <span class="gt-tile-title">Help Centre</span>
+            <span class="gt-tile-desc">Guides, FAQs and troubleshooting</span>
+          </span>
+          <span class="gt-tile-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="gt-tile" href="https://kineticgames.co.uk/press" target="_blank" rel="noopener">
+          <span class="gt-tile-num">02</span>
+          <span class="gt-tile-body">
+            <span class="gt-tile-title">Press &amp; Media</span>
+            <span class="gt-tile-desc">Assets, logos and enquiries</span>
+          </span>
+          <span class="gt-tile-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="gt-tile" href="https://discord.com/invite/phasmophobia" target="_blank" rel="noopener">
+          <span class="gt-tile-num">03</span>
+          <span class="gt-tile-body">
+            <span class="gt-tile-title">Community</span>
+            <span class="gt-tile-desc">Join the conversation on Discord</span>
+          </span>
+          <span class="gt-tile-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <img src="https://kineticgames.co.uk/payload-api/media/file/kinetic_games_footer_logo.webp" alt="Kinetic Games" style="height:80px;width:auto">
+    <div class="footer-social">
+      <a href="https://www.youtube.com/channel/UCEyR7e-25KW9-oNv_CY8CSw" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/youtube-icon.svg" alt="YouTube">
+      </a>
+      <a href="https://x.com/PlayPhasmo" target="_blank" rel="noopener" class="social-icon" aria-label="X">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/x-icon.svg" alt="X">
+      </a>
+      <a href="https://discord.com/invite/phasmophobia" target="_blank" rel="noopener" class="social-icon" aria-label="Discord">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/discord-icon.svg" alt="Discord">
+      </a>
+      <a href="https://www.tiktok.com/@playphasmo" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/TikTok-icon.svg" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com/playphasmo/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+        <img src="https://kineticgames.co.uk/payload-api/media/file/instagram-icon.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="https://kineticgames.co.uk/phasmophobia" target="_blank" rel="noopener">Phasmophobia</a>
+    <a href="https://kineticgames.co.uk/publishing" target="_blank" rel="noopener">Publishing</a>
+    <a href="https://ats.rippling.com/en-GB/kinetic-games-careers/jobs" target="_blank" rel="noopener">Careers</a>
+    <a href="https://kineticgames.co.uk/about-us" target="_blank" rel="noopener">About Us</a>
+    <a href="https://kineticgames.co.uk/news" target="_blank" rel="noopener">News</a>
+    <a href="https://kineticgames.zendesk.com/hc/en-gb/requests/new" target="_blank" rel="noopener">Contact Us</a>
+    <a href="https://kineticgames.zendesk.com/hc/en-gb" target="_blank" rel="noopener">Help Centre</a>
+    <a href="https://kineticgames.co.uk/press" target="_blank" rel="noopener">Press</a>
+  </nav>
+  <div class="footer-legal">
+    <a href="https://kineticgames.co.uk/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="https://kineticgames.co.uk/gaming-content-guidelines" target="_blank" rel="noopener">Gaming Content Guidelines</a>
+    <a href="https://kineticgames.co.uk/code-of-conduct" target="_blank" rel="noopener">Code of Conduct</a>
+    <a href="https://kineticgames.co.uk/end-user-license-agreement" target="_blank" rel="noopener">EULA</a>
+    <a href="https://kineticgames.co.uk/UK-store-terms" target="_blank" rel="noopener">UK Store T&amp;Cs</a>
+    <a href="https://kineticgames.co.uk/USA-Store-Terms" target="_blank" rel="noopener">USA Store T&amp;Cs</a>
+    <a href="https://kineticgames.co.uk/Canada-Store-Terms" target="_blank" rel="noopener">Canada Store T&amp;Cs</a>
+    <a href="https://kineticgames.co.uk/twitch-drops" target="_blank" rel="noopener">Twitch Drops</a>
+  </div>
+  <p class="footer-copy">All rights reserved © Phasmophobia, the Phasmophobia logo and Kinetic Games are either ® or TM, Kinetic Games Limited.</p>
+</footer>
+
+<!-- CURSOR ELEMENTS -->
+<div id="spotlight" aria-hidden="true"></div>
+<div id="cur-dot" aria-hidden="true"></div>
+
+<script>
+// ── FONT LOADING GATE (prevents fallback/webfont overlap flash in the nav) ──
+const markFontsReady = () => document.documentElement.classList.add('fonts-ready');
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(markFontsReady);
+}
+// Safety fallback so the nav always appears even if the font promise never resolves
+setTimeout(markFontsReady, 1500);
+
+// ── NAV SCROLL ──
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+
+// ── MOBILE MENU ──
+const burger = document.getElementById('burgerBtn');
+const mobNav = document.getElementById('mobNav');
+const mobClose = document.getElementById('mobClose');
+const openMenu = () => mobNav.classList.add('open');
+const closeMenu = () => mobNav.classList.remove('open');
+burger.addEventListener('click', openMenu);
+burger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openMenu(); } });
+mobClose.addEventListener('click', closeMenu);
+mobClose.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); closeMenu(); } });
+mobNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+// ── PHASMOPHOBIA PARALLAX + 3D TILT ──
+const card = document.getElementById('phasmCard');
+const bg = document.getElementById('phasmBg');
+const fog = document.getElementById('phasmFog');
+if (card) {
+  card.addEventListener('mousemove', (e) => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width;
+    const y = (e.clientY - r.top) / r.height;
+    bg.style.transform = `translate(${(x - 0.5) * -24}px, ${(y - 0.5) * -16}px) scale(1.1)`;
+    card.style.transform = `perspective(1200px) rotateX(${(y - 0.5) * -6}deg) rotateY(${(x - 0.5) * 6}deg)`;
+    fog.style.setProperty('--mx', `${x * 100}%`);
+    fog.style.setProperty('--my', `${y * 100}%`);
+  });
+  card.addEventListener('mouseleave', () => {
+    bg.style.transform = 'translate(0,0) scale(1.05)';
+    card.style.transform = 'perspective(1200px) rotateX(0) rotateY(0)';
+  });
+}
+
+// ── SCROLL TO TOP ──
+const sto = Object.assign(document.createElement('button'), { innerHTML: '↑' });
+sto.setAttribute('aria-label', 'Scroll to top');
+Object.assign(sto.style, {
+  position:'fixed', bottom:'28px', right:'28px', width:'44px', height:'44px',
+  borderRadius:'2px', background:'rgba(255,255,255,0.08)',
+  border:'1px solid rgba(255,255,255,0.15)', color:'#fff', fontSize:'16px',
+  cursor:'pointer', opacity:'0', transition:'opacity 0.3s', zIndex:'200',
+  backdropFilter:'blur(8px)', pointerEvents:'none'
+});
+document.body.appendChild(sto);
+window.addEventListener('scroll', () => {
+  const show = window.scrollY > 400;
+  sto.style.opacity = show ? '1' : '0';
+  sto.style.pointerEvents = show ? 'auto' : 'none';
+}, { passive: true });
+sto.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ── INTERACTIVITY (cursor, trail, magnetic, scramble, parallax) ──
+(function() {
+  const isTouch = window.matchMedia('(hover:none)').matches;
+  const dot = document.getElementById('cur-dot');
+  const spl = document.getElementById('spotlight');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  if (!isTouch) {
+    let lastT = 0;
+    function spawnTrail(x, y, ghost) {
+      const now = Date.now();
+      if (now - lastT < 40) return;
+      lastT = now;
+      const d = document.createElement('div');
+      const sz = Math.random() * 4 + 2;
+      d.style.cssText = `
+        position:fixed;pointer-events:none;z-index:9998;
+        width:${sz}px;height:${sz}px;border-radius:50%;
+        left:${x}px;top:${y}px;transform:translate(-50%,-50%);
+        background:${ghost ? 'rgba(140,160,255,0.75)' : 'rgba(255,255,255,0.55)'};
+        transition:opacity 0.55s ease,transform 0.55s ease;
+        mix-blend-mode:screen;
+      `;
+      document.body.appendChild(d);
+      const dx = (Math.random() - .5) * 18;
+      const dy = (Math.random() - .5) * 18 - 8;
+      requestAnimationFrame(() => {
+        d.style.opacity = '0';
+        d.style.transform = `translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px)) scale(0.2)`;
+      });
+      setTimeout(() => d.remove(), 600);
+    }
+
+    const INTERACTIVE = 'a, button, [role="button"], .nav-burger, .mob-close, .news-card, input, textarea, select, label, summary';
+    window.addEventListener('mousemove', e => {
+      const mx = e.clientX, my = e.clientY;
+      spl.style.opacity = '1';
+      dot.style.left = mx + 'px';
+      dot.style.top = my + 'px';
+      spl.style.left = mx + 'px';
+      spl.style.top = my + 'px';
+      const el = document.elementFromPoint(mx, my);
+      const onPhasm = !!(el && el.closest('#phasmCard'));
+      // Over a clickable element: hand control back to the native pointer (bigger, easier target)
+      // but keep the particle trail + spotlight going.
+      const interactive = !!(el && el.closest(INTERACTIVE));
+      dot.style.opacity = interactive ? '0' : '1';
+      dot.classList.toggle('ghost', onPhasm);
+      spl.classList.toggle('ghost', onPhasm);
+      spawnTrail(mx, my, onPhasm);
+    });
+    window.addEventListener('mousedown', () => dot.classList.add('clicking'));
+    window.addEventListener('mouseup', () => dot.classList.remove('clicking'));
+    document.addEventListener('mouseleave', () => { dot.style.opacity = '0'; spl.style.opacity = '0'; });
+
+    // ── MAGNETIC BUTTONS ──
+    const magEls = document.querySelectorAll('.nav-links a, .btn-careers, .btn-pub, .phasm-btn, .btn-support, .more-news');
+    magEls.forEach(el => {
+      el.classList.add('mag');
+      el.addEventListener('mousemove', e => {
+        const r = el.getBoundingClientRect();
+        const dx = (e.clientX - (r.left + r.width / 2)) * 0.28;
+        const dy = (e.clientY - (r.top + r.height / 2)) * 0.28;
+        el.style.transform = `translate(${dx}px, ${dy}px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = 'translate(0,0)'; });
+    });
+
+    // ── NEWS CARD 3D TILT ──
+    document.querySelectorAll('.news-card').forEach(nc => {
+      nc.addEventListener('mousemove', e => {
+        const r = nc.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        nc.style.transform = `perspective(600px) rotateX(${y * -8}deg) rotateY(${x * 8}deg) translateY(-4px)`;
+      });
+      nc.addEventListener('mouseleave', () => {
+        nc.style.transform = 'perspective(600px) rotateX(0) rotateY(0) translateY(0)';
+      });
+    });
+  }
+
+  // ── TEXT SCRAMBLE (single-line headings only) ──
+  const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%?';
+  function scramble(el) {
+    const original = el.textContent;
+    el.classList.add('scramble');
+    let iter = 0;
+    const total = 18;
+    const iv = setInterval(() => {
+      el.textContent = original.split('').map((ch, i) => {
+        if (ch === ' ') return ' ';
+        if (i < iter / total * original.length) return ch;
+        return CHARS[Math.floor(Math.random() * CHARS.length)];
+      }).join('');
+      iter++;
+      if (iter > total) {
+        clearInterval(iv);
+        el.textContent = original;
+        el.classList.add('done');
+      }
+    }, 40);
+  }
+
+  // Only scramble plain-text headings (no <br>, <u>, or other child elements)
+  // so multi-line titles like "Kinetic / Games" stay intact.
+  const scrambleTargets = [...document.querySelectorAll('h1, h2')].filter(el => el.children.length === 0);
+  const scrObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        if (!prefersReduced) setTimeout(() => scramble(e.target), 100);
+        scrObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  scrambleTargets.forEach(el => scrObs.observe(el));
+
+  // ── SCROLL PARALLAX ──
+  const heroTitle = document.querySelector('.hero-title');
+  const quoteText = document.querySelector('.quote-text');
+  if (!prefersReduced) {
+    window.addEventListener('scroll', () => {
+      const sy = window.scrollY;
+      if (heroTitle) heroTitle.style.transform = `translateY(${sy * 0.35}px)`;
+      if (quoteText) quoteText.style.transform = `translateY(${sy * -0.04}px)`;
+    }, { passive: true });
+  }
+
+  // ── SCROLL REVEAL ──
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+})();
+</script>
+</body>
+</html>
