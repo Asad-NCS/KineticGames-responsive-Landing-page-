@@ -326,10 +326,40 @@ sto.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth'
 
 // ── INTERACTIVITY (cursor, trail, magnetic, scramble, parallax) ──
 (function() {
-  const isTouch = window.matchMedia('(hover:none)').matches;
+  const isTouch = window.matchMedia('(hover:none)').matches || window.matchMedia('(pointer:coarse)').matches || navigator.maxTouchPoints > 0;
   const dot = document.getElementById('cur-dot');
   const spl = document.getElementById('spotlight');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  function spawnTapBurst(x, y, tint = 'rgba(255, 255, 255, 0.72)') {
+    const count = prefersReduced ? 2 : 6;
+    for (let i = 0; i < count; i++) {
+      const particle = document.createElement('span');
+      const size = 4 + Math.random() * 7;
+      const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.55;
+      const distance = 18 + Math.random() * 26;
+      particle.className = 'tap-particle';
+      particle.style.cssText = `
+        left:${x}px;
+        top:${y}px;
+        width:${size}px;
+        height:${size}px;
+        background:${tint};
+        --dx:${Math.cos(angle) * distance}px;
+        --dy:${Math.sin(angle) * distance}px;
+      `;
+      document.body.appendChild(particle);
+      particle.addEventListener('animationend', () => particle.remove(), { once: true });
+    }
+  }
+
+  function pulseTap(target) {
+    if (!target) return;
+    target.classList.remove('tap-active');
+    void target.offsetWidth;
+    target.classList.add('tap-active');
+    window.setTimeout(() => target.classList.remove('tap-active'), 180);
+  }
 
   if (!isTouch) {
     let lastT = 0;
@@ -404,6 +434,19 @@ sto.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth'
         nc.style.transform = 'perspective(600px) rotateX(0) rotateY(0) translateY(0)';
       });
     });
+  }
+
+  if (isTouch) {
+    const interactiveSelector = 'a, button, .nav-burger, .mob-close, .news-card, .phasm-card, .gt-tile, .btn-careers, .btn-pub, .btn-support, .more-news';
+    document.addEventListener('pointerdown', e => {
+      if (e.pointerType !== 'touch') return;
+      const activeTarget = e.target.closest(interactiveSelector);
+      const x = e.clientX;
+      const y = e.clientY;
+      const tint = activeTarget && activeTarget.matches('.phasm-card, .news-card') ? 'rgba(140, 160, 255, 0.8)' : 'rgba(255, 255, 255, 0.72)';
+      spawnTapBurst(x, y, tint);
+      pulseTap(activeTarget || e.target.closest('.hero, .about, .quote-section, .phasm-wrap, .publishing, .news, .careers, .gold-wave, footer'));
+    }, { passive: true });
   }
 
   // ── TEXT SCRAMBLE (single-line headings only) ──

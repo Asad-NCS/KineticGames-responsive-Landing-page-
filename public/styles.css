@@ -519,6 +519,37 @@ footer{
 .scramble{opacity:0}
 .scramble.done{opacity:1}
 
+/* ── TOUCH TAP FX ── */
+.tap-particle{
+  position:fixed;
+  pointer-events:none;
+  z-index:9997;
+  border-radius:999px;
+  box-shadow:0 0 12px rgba(255,255,255,0.18);
+  transform:translate(-50%,-50%) scale(0.6);
+  animation:tapBurst 520ms ease-out forwards;
+}
+.tap-active{
+  transform:translateY(-1px) scale(0.985);
+  filter:brightness(1.08);
+}
+.phasm-card.tap-active,
+.news-card.tap-active,
+.gt-tile.tap-active,
+.btn-careers.tap-active,
+.btn-pub.tap-active,
+.btn-support.tap-active,
+.more-news.tap-active,
+.nav-burger.tap-active,
+.mob-close.tap-active{
+  box-shadow:0 0 0 1px rgba(255,255,255,0.08), 0 0 24px rgba(255,255,255,0.08);
+}
+
+@keyframes tapBurst{
+  0%{opacity:0.95;transform:translate(-50%,-50%) scale(0.5)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0)}
+}
+
 /* ── NEWS CARD 3D ── */
 .news-card{
   transform-style:preserve-3d;
@@ -561,6 +592,7 @@ footer{
   .footer-nav{gap:8px 20px}
 }
 @media(max-width:480px){
+  .hero{min-height:540px}
   .hero-title h1{letter-spacing:-1px}
   .news-hd{flex-direction:column;gap:12px}
 }
