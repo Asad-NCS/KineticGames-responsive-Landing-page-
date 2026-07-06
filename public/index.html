@@ -495,7 +495,7 @@ sto.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth'
     }, { passive: true });
   }
 
-  // ── SCROLL REVEAL ──
+  // ── SCROLL reveal ──
   const revObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
